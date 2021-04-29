@@ -1,0 +1,17 @@
+server:
+  port: 3142
+swagger-port: 3142
+
+datasource:
+  mysql:
+    mysql:
+      driver: mysql
+      host: localhost:3306
+      username: root
+      password: 1234
+      dbname: mintkt
+      debug: false
+      connection:
+        maxOpenConns: 100
+        maxIdleConns: 10
+        connMaxLifetime: 2

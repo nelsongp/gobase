@@ -9,7 +9,7 @@ import (
 )
 
 var MongoCN = ConectarBD()
-var clientOptions = options.Client().ApplyURI("")
+var clientOptions = options.Client().ApplyURI("mongodb+srv://twittor:P3r5s1a8191@cluster0-ruzay.mongodb.net/twittor?retryWrites=true&w=majority")
 
 /*ConectarBD agregar siempre conementario*/
 func ConectarBD() *mongo.Client {
@@ -28,7 +28,7 @@ func ConectarBD() *mongo.Client {
 	return client
 }
 
-/* ChequeoConnection agregar siempre conementario*/
+//ChequeoConnection es ping a la base
 func ChequeoConnection() int {
 	err := MongoCN.Ping(context.TODO(), nil)
 	if err != nil {

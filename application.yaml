@@ -1,0 +1,3 @@
+server:
+  port: 90
+swagger-port: 90
